@@ -16,5 +16,7 @@ COPY . .
 # Собираем JAR файл
 RUN mvn clean package
 
+#Ещё одна новая заметка
+
 # Запускаем приложение
 ENTRYPOINT ["java", "-jar", "target/docker_maven-1.0-SNAPSHOT.jar"]
